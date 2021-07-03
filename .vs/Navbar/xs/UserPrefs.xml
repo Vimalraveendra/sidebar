@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{27EB33FB-9DB2-4FC5-80CC-2F580A0632C0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Navbar/Pages/Index.razor">
+    <Files>
+      <File FileName="Navbar/Pages/_Host.cshtml" IsPinned="True" />
+      <File FileName="Navbar/Pages/Index.razor" Line="2" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Navbar" expanded="True">
+            <Node name="Navbar" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.razor" selected="True" />
+              </Node>
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Navbar PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

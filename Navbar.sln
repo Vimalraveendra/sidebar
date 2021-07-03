@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navbar", "Navbar\Navbar.csproj", "{27EB33FB-9DB2-4FC5-80CC-2F580A0632C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27EB33FB-9DB2-4FC5-80CC-2F580A0632C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EB33FB-9DB2-4FC5-80CC-2F580A0632C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EB33FB-9DB2-4FC5-80CC-2F580A0632C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EB33FB-9DB2-4FC5-80CC-2F580A0632C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2C90F3C-3EBF-4C50-8B59-FC10BAF67842}
+	EndGlobalSection
+EndGlobal

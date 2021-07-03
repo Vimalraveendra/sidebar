@@ -1,0 +1,54 @@
+﻿@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+
+@page "/"
+
+<body>
+
+    <!-- nav heading section -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
+
+    </nav>
+    <!-- <div  class="card"> -->
+    <ul class="list">
+    </ul>
+
+    <!-- </div> -->
+    <!-- body section -->
+    <main>
+        <section class="main-container">
+            <div class="patient-container">
+
+                <div class="list-container">
+                    <ul class="patient-list">
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="split-bar">&nbsp;</div>
+
+            <div class="card-container">
+                <div class="patient-card">
+                    <h3> Patient card</h3>
+                    <p>10001</p>
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+
+
+</body>
+
+@code{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("logUser", "Text after render");
+        }
+    }
+}
