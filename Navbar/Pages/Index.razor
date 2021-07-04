@@ -10,9 +10,17 @@
         <nav class="nav-container fixed">
             <div class="nav-header">
                 <div class='side-left'>
-                  
+
                     <button class="btn-click">Click</button>
-                    
+                    <div class="vehicle">
+                        <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
+                        <label for="vehicle"> I have a bike</label><br>
+                    </div>
+                    <div class="vehicle">
+                        <input type="checkbox" id="car" name="car" value="car" disabled>
+                        <label for="vehicle"> I have Car</label><br>
+                    </div>
+
                 </div>
 
                 <ul class="list">
@@ -26,15 +34,56 @@
             </div>
         </nav>
     </header>
+
+    <nav class="sidebar-container">
+        <div class="text">Side Bar</div>
+        <ul class="top-list">
+            <li><a href="#">Dashboard</a></li>
+            <li>
+                <i class="fas fa-chevron-right first"></i>
+                <a href="#">Features</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Pages</a></li>
+                    <li>
+                        <a href="#">Elements</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <i class="fas fa-chevron-right second"></i>
+                <a href="#">Services</a>
+
+                <ul class="sub-menu2">
+                    <li><a href="#">App Desingn</a></li>
+                    <li><a href="#">Web Desingn</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+
+    </nav>
+
+
+    <!-- menu header to display only on small screens -->
+    <div class="menu-header">
+        <p>Menu</p>
+        <div class="toggle">
+            <i class="fas fa-bars burger" style="font-size:24px;"> </i>
+            <i class="fas fa-times close" style="font-size:24px;"></i>
+        </div>
+    </div>
+
+
     <!-- body section -->
     <main>
         <section class="main-container">
             <div class="patient-container">
 
+
                 @*<div class="list-container">
-                    <ul class="patient-list">
-                    </ul>
-                </div>*@
+                        <ul class="patient-list">
+                        </ul>
+                    </div>*@
 
             </div>
 
@@ -42,9 +91,9 @@
 
             <div class="card-container">
                 @*<div class="patient-card">
-                    <h3> Patient card</h3>
-                    <p>10001</p>
-                </div>*@
+                        <h3> Patient card</h3>
+                        <p>10001</p>
+                    </div>*@
 
             </div>
 

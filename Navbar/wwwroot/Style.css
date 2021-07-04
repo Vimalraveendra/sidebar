@@ -11,8 +11,8 @@
         outline: none;
     }
 
-input:focus, select:focus {
-    outline: none;
+input:focus, select:focus button:focus{
+    outline: none !important;
 }
 
 body {
@@ -56,11 +56,30 @@ body {
     margin-left: 5px;
 }
 
+    .btn-click:hover {
+        background-color: #ff9800;
+        color:#fff;
+    }
+
+    .vehicle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+    .vehicle input {
+        margin: 0px 5px
+    }
+        .vehicle label {
+            margin: 0px;
+            color: #fff;
+        }
+
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .list {
@@ -70,7 +89,7 @@ ul {
 
     .list li {
         padding: 10px 5px;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
         .list li a {
@@ -78,10 +97,23 @@ ul {
             color: #fff;
         }
 
+        .list li a:hover{
+            color:rgba(255,255,255,0.5);
+        }
+
+/* main-menu burger icon */
+.menu-header {
+    display: none;
+}
+
+.menu-header p{
+    margin:0;
+}
+
 /* body section */
 
 main {
-    margin-top: 46px;
+    margin-top: 44px;
 }
 
 
@@ -167,34 +199,162 @@ main {
     align-items: center;
 }
 
+.active{
+    background-color:red;
+}
+.toggle {
+    width: 25px;
+    height: 25px;
+}
+
+    .toggle i {
+        position: absolute;
+        right: 13px;
+        top: 12px;
+    }
+    .toggle .close{
+        color:#fff;
+    }
+
+    .toggle .close,
+    .toggle .active i {
+        display: none;
+    }
+
+    .toggle .active .close,
+    .toggle .burger {
+        display: block
+    }
+
+/*    //side bar*/
+
+.sidebar-container {
+    margin-top: 20px;
+}
+
+    .sidebar-container .top-list{
+        margin-left:10px;
+       
+    }
+.sidebar-container ul {
+    margin-left: 20px;
+    background-color: #000;
+}
+.first, .second{
+    color:#fff;
+    margin-right:5px;
+    transition:transform 0.3s;
+}
+
+.rotate{
+    transform:rotate(90deg);
+}
+.sub-menu , .sub-menu2{
+    display:none;
+}
+.show{
+    display:block;
+}
+
 /* media queries on small screens */
-@media only screen and (max-width: 690px) {
-    .patient-card {
-        width: 80%;
+@media only screen and (max-width: 836px) {
+    .nav-container {
+        display: none;
     }
 
-    @media only screen and (max-width: 576px) {
-        .main-container {
-            display: flex;
-            flex-direction: column;
+    .nav-header {
+        display: table;
+        width: 100%;
+        background: black;
+    }
+
+    .list {
+        flex-direction: column;
+        justify-content: flex-start;
+      
+    }
+        .list li {
+            padding: 7px;
+            font-size: 1.25em;
+            margin: 0px 3px;
         }
 
-        .list-container {
-            width: 100%;
-        }
+    .menu-header {
+        display: block;
+        background: #272722;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        color: #fff;
+        font-size: 22px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .display {
+        display: block;
+        margin-top: 2.9em;
+    }
 
-        .card-container {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
+    .side-left{
+        flex-direction:column;
+    }
+    .vehicle {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size:1.35em;
+    }
+    .menu-header p {
+        margin: 0px 5px;
+        font-size: 0.8em;
+    }
+    main {
+        margin-top: 47px;
+    }
+    .btn-click {
+       
+        padding: 5px 0px;
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .list li:hover {
+        background-color: #03a9f4;
+    }
 
+    
+    
+}
+
+    /* media queries on small screens */
+    /*@media only screen and (max-width: 690px) {
         .patient-card {
-            width: 70%;
-            margin: 2rem 0 1rem 1rem;
+            width: 80%;
         }
 
-        .split-bar {
-            margin: 0 0 0 0;
-        }
-    }
+        @media only screen and (max-width: 576px) {
+            .main-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .list-container {
+                width: 100%;
+            }
+
+            .card-container {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .patient-card {
+                width: 70%;
+                margin: 2rem 0 1rem 1rem;
+            }
+
+            .split-bar {
+                margin: 0 0 0 0;
+            }
+        }*/

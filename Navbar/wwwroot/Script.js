@@ -357,18 +357,34 @@ function loadUsers() {
     }
 
 
-    //const buttonScrollDown = document.querySelector('.caret-down  ')
-    //buttonScrollDown.addEventListener('click', () => {
+    const menuEl = document.querySelector('.menu-header');
+    const toggleEl = document.querySelector('.toggle')
+    const navContainerEl = document.querySelector('.nav-container')
+    const firstEl = document.querySelector('.first')
+    const secondEl = document.querySelector('.second');
+    const subMenuEl = document.querySelector('.sub-menu')
+    const subMenu2El = document.querySelector('.sub-menu2')
 
-    //    document.body.scrollBottom = 0;
-    //    document.documentElement.scrollBottom = 0;
-    //})
+    function renderDropDown(event) {
+        event.preventDefault();
+        toggleEl.classList.toggle('active')
+        navContainerEl.classList.toggle('display')
+        //event.target === toggleEl ?
+        //    toggleEl.classList.toggle('active') : null;
 
-    //const buttonScrollUp = document.querySelector('.caret-up  ')
-    //buttonScrollUp.addEventListener('click', () => {
+    }
+    
 
-    //    document.body.scrollBottom = 0;
-    //    document.documentElement.scrollBottom = 0;
-    //})
+    toggleEl.addEventListener('click', renderDropDown)
+    firstEl.addEventListener('click', function () {
+   
+        firstEl.classList.toggle('rotate')
+        subMenuEl.classList.toggle('show')
+    })
+    secondEl.addEventListener('click', function () {
+  
+        secondEl.classList.toggle('rotate')
+        subMenu2El.classList.toggle('show')
+    })
 
 }
