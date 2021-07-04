@@ -21,37 +21,40 @@ body {
     min-width: 100vh;
 }
 
-/* .fixed{
-    position:fixed;
-    top:0;
-    width:100%
-  } */
-/* nav section */
-.form-inline {
-    margin: 0;
-    padding: 0;
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
 }
 
-    .form-inline input {
-        position: relative;
-    }
+/* setting the position of navigation header fixed */
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
-#input-inside {
-    position: absolute;
-    left: 122px;
+
+.side-left {
+    display: flex;
+}
+
+
+#logo {
+    font-size: 1.35em;
+    margin-left: 5px;
+    padding: 10px;
+    color: #fff;
+}
+.btn-click {
+    background-color: #ffc107;
+    padding: 3px 30px;
+    border-radius: 25px;
     border: none;
-    padding: 0;
+    margin-left: 5px;
 }
-/* .card {
-  width: 200px;
-  position: absolute;
-  background-color: rgb(243, 243, 243);
-  top: 55px;
-  left: 15px;
-  border-radius: 10px;
-  display: none;
-  z-index: 1;
-} */
 
 
 ul {
@@ -61,38 +64,34 @@ ul {
 }
 
 .list {
-    width: 200px;
-    position: absolute;
-    background-color: rgb(243, 243, 243);
-    top: 55px;
-    left: 15px;
-    border-radius: 10px;
-    display: none;
-    z-index: 1;
+    display: flex;
+    list-style: none;
 }
 
     .list li {
-        border-bottom: 1px solid black;
-        padding-left: 10px;
+        padding: 10px 5px;
+        font-size: 1.1em;
     }
 
-        .list li:last-child {
-            border-bottom: none;
+        .list li a {
+            text-decoration: none;
+            color: #fff;
         }
 
-.done {
-    display: block;
+/* body section */
+
+main {
+    margin-top: 46px;
 }
 
-/* body section */
 
 /* main-container */
 .main-container {
     display: flex;
-    border: 1px black solid;
     margin: 0 2px;
-    background-color: antiquewhite;
+/*    background-color: antiquewhite;*/
     overflow: hidden;
+    height: 98vh;
 }
 
 /* left-pane */
@@ -100,9 +99,10 @@ ul {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 15%;
-    background-color: aqua;
+/*    background-color: aqua;*/
     display: flex;
     width: 180px;
+    border: 1px black solid;
 }
 
 /* right-pane */
@@ -110,45 +110,23 @@ ul {
     flex-grow: 1;
     flex-shrink: 0;
     background-color: aquamarine;
+    border: 1px black solid;
 }
 
 /* separator */
 .split-bar {
     flex-grow: 0;
     flex-shrink: 0;
-    background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #b1afaf;
-    width: 0.8rem;
+    background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #2196f3;
+    width: 0.6rem;
     cursor: col-resize;
     margin: 0 0 0 auto;
 }
 
 /* alphabets list */
 
-.letter-bar {
-    background-color: black;
-}
 
-.letters {
-    height: 422px;
-    overflow: auto;
-}
 
-    .letters li {
-        text-align: center;
-        color: #fff;
-        margin: 0;
-        padding: 5px;
-        font-size: 1.25rem;
-    }
-
-.caret {
-    background-color: #b1afaf;
-    border: none;
-}
-
-    .caret .fas {
-        font-size: 20px;
-    }
 
 /* patient card container */
 .list-container {
