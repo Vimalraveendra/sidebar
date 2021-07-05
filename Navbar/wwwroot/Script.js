@@ -367,6 +367,9 @@ function loadUsers() {
 
     function renderDropDown(event) {
         event.preventDefault();
+        let spanIconEl = document.querySelector('.burger')
+        spanIconEl.classList.toggle("fa-bars")
+        spanIconEl.classList.toggle("fa-times")
         toggleEl.classList.toggle('active')
         navContainerEl.classList.toggle('display')
         //event.target === toggleEl ?
@@ -376,6 +379,7 @@ function loadUsers() {
     
 
     toggleEl.addEventListener('click', renderDropDown)
+
     firstEl.addEventListener('click', function () {
    
         firstEl.classList.toggle('rotate')

@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Navbar/Pages/Index.razor">
     <Files>
       <File FileName="Navbar/Pages/_Host.cshtml" Line="1" Column="1" IsPinned="True" />
-      <File FileName="Navbar/Pages/Index.razor" Line="41" Column="20" />
+      <File FileName="Navbar/Pages/Index.razor" Line="56" Column="39" />
       <File FileName="Navbar/wwwroot/Style.css" />
       <File FileName="Navbar/wwwroot/css/site.css" />
       <File FileName="Navbar/Shared/MainLayout.razor" />
