@@ -1,24 +1,23 @@
 ﻿<Properties StartupConfiguration="{27EB33FB-9DB2-4FC5-80CC-2F580A0632C0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Navbar/Pages/Index.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Navbar/wwwroot/Script.js">
     <Files>
       <File FileName="Navbar/Pages/_Host.cshtml" Line="1" Column="1" IsPinned="True" />
-      <File FileName="Navbar/Pages/Index.razor" Line="56" Column="39" />
-      <File FileName="Navbar/wwwroot/Style.css" />
+      <File FileName="Navbar/Pages/Index.razor" Line="77" Column="26" />
+      <File FileName="Navbar/wwwroot/Style.css" Line="219" Column="20" />
       <File FileName="Navbar/wwwroot/css/site.css" />
       <File FileName="Navbar/Shared/MainLayout.razor" />
-      <File FileName="Navbar/wwwroot/Script.js" />
+      <File FileName="Navbar/wwwroot/Script.js" Line="377" Column="58" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Navbar" expanded="True">
             <Node name="Navbar" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Index.razor" selected="True" />
-              </Node>
+              <Node name="Pages" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
+                <Node name="Script.js" selected="True" />
               </Node>
             </Node>
           </Node>
