@@ -368,6 +368,7 @@ function loadUsers() {
     function renderDropDown(event) {
         event.preventDefault();
         let spanIconEl = document.querySelector('.burger')
+        //remove the class from element if the class is already present
         spanIconEl.classList.toggle("fa-bars")
         spanIconEl.classList.toggle("fa-times")
         toggleEl.classList.toggle('active')
